@@ -1,0 +1,60 @@
+.img-escudo {
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+    left: 0px;
+    top: 0px;
+}
+
+.content-gradient {
+    width: 100%;
+
+}
+
+.color-curve {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    margin-top: -260px;
+    background: linear-gradient(180deg, #2F5643 14.95%, #3C6853 40.99%, #3C6853 56.91%, #2C5340 82.88%);
+
+}
+
+.white-curve {
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    margin-top: -101px;
+}
+
+@media only screen and (max-width: 570px) {
+    .img-escudo {
+        overflow: hidden;
+        height: 800px;
+    }
+
+    .color-curve {
+        height: 65px;
+        margin-top: -110px;
+    }
+
+    .white-curve {
+        position: absolute;
+        margin-top: 5px;
+        /* margin-top: -40px; */
+    }
+}
+
+@media (min-width: 571px) and (max-width: 1260px) {
+    .img-escudo {
+    }
+
+    .color-curve {
+        margin-top: -72px;
+        height: 145px;
+    }
+
+    .white-curve {
+        margin-top: -70px;
+    }
+}
