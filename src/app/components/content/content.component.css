@@ -1,21 +1,75 @@
-.img-escudo {
+.content-section {
+    background-image: url("../../../assets/images/fondo_escudo.png");
+    width: 100%;
+    height: 730px;
+    background-size: cover;
+}
+
+.content-banner {
+    position: absolute;
+    width: 40%;
+    margin-top: 170px;
+    left: 80px;
+    color: #ffffff;
+    line-height: 25px;
+}
+
+.banner-title {
+    font-family: MyFont;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 65px;
+}
+
+.banner-subtitle {
+    font-family: MyFont;
+    font-size: 22px;
+    line-height: 33px;
+    margin-top: 60px;
+}
+
+.btn-download {
+    padding: 20px 80px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    font-family: Poppins, sans-serif;
+    background-color: transparent;
+    border-color: #fff;
+    border-radius: 3rem;
+}
+
+.btn-download:hover {
+    background-color: #ffffff;
+    color: #838E51;
+}
+
+.btn-download:active {
+    background-color: transparent;
+    border-color: #ffffff;
+    color: #fff;
+}
+
+/* .img-escudo {
     position: relative;
     width: 100%;
     object-fit: cover;
     left: 0px;
     top: 0px;
-}
+} */
 
 .content-gradient {
     width: 100%;
+    position: relative;
 
 }
 
 .color-curve {
-    position: relative;
+    /* position: relative; */
     width: 100%;
     height: 200px;
-    margin-top: -260px;
+    /* margin-top: -260px; */
     background: linear-gradient(180deg, #2F5643 14.95%, #3C6853 40.99%, #3C6853 56.91%, #2C5340 82.88%);
 
 }
@@ -23,38 +77,172 @@
 .white-curve {
     width: 100%;
     object-fit: cover;
+    /* position: absolute; */
+    margin-top: -170px;
+}
+
+.phone {
     position: absolute;
-    margin-top: -101px;
+    width: 381.26px;
+    height: 712px;
+    left: 790px;
+    top: 230px;
+    z-index: 10;
+}
+
+/* background options */
+
+.options-bg {
+    width: 100%;
+    background-color: #ffffff;
+    height: 600px;
+    position: absolute;
+    margin-top: -5px;
+}
+
+.content-opt {
+    width: 90%;
+    margin: auto;
+    margin-top: 150px;
+}
+
+.text-opt {
+    font-family: MyFont;
+    color: #212529;
+    padding: 90px;
+    display: table;
+}
+
+.text-cont-opt {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.title-opt {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 33px;
+    line-height: 45px;
+}
+
+.subtitle-opt {
+    color: #495057;
+    font-size: 16px;
 }
 
 @media only screen and (max-width: 570px) {
+    
+    .content-section {
+        height: 850px;
+    }
+
     .img-escudo {
-        overflow: hidden;
-        height: 800px;
+        /* overflow: hidden;
+        height: 800px; */
+    }
+
+    .content-banner {
+        width: 90%;
+        left: 20px;
+    }
+
+    .banner-title {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .banner-subtitle {
+        font-size: 16px;
+        margin-top: 30px;
     }
 
     .color-curve {
-        height: 65px;
-        margin-top: -110px;
+        height: 0px;
     }
 
     .white-curve {
-        position: absolute;
-        margin-top: 5px;
+        margin-top: -40px;
         /* margin-top: -40px; */
+    }
+
+    .phone {
+        position: relative;
+        width: 100%;
+        left: 0;
+        top: 0;
+        z-index: 0;
+    }
+
+    .phone-img {
+        position: absolute;
+        left: 53%;
+        top: 73%;
+        transform: translate(-50%);
+        z-index: 0;
+        width: 290px;
+    }
+
+    .options-bg {
+        margin-top: -10px;
+    }
+
+    .text-opt {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .img-resp {
+        width: 100%;
     }
 }
 
 @media (min-width: 571px) and (max-width: 1260px) {
-    .img-escudo {
+
+    .content-section {
+        height: 1000px;
+    }
+
+    .content-banner {
+        width: 80%;
+    }
+
+    .banner-title {
+        text-align: center;
+        font-size: 50px;
+    }
+
+    .banner-subtitle {
+        font-size: 16px;
+        line-height: 26px;
+        margin-top: 30px;
     }
 
     .color-curve {
-        margin-top: -72px;
-        height: 145px;
+        /* margin-top: -72px; */
+        height: 0px;
     }
 
     .white-curve {
-        margin-top: -70px;
+        margin-top: -64px;
+    }
+
+    .phone {
+        position: relative;
+        width: 100%;
+        left: 0;
+        top: 0;
+        z-index: 0;
+    }
+
+    .phone-img {
+        position: absolute;
+        left: 53%;
+        top: 80%;
+        transform: translate(-50%);
+        z-index: 0;
+    }
+
+    .img-resp {
+        width: 100%;
     }
 }
