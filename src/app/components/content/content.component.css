@@ -137,9 +137,9 @@
         height: 850px;
     }
 
-    .img-escudo {
-        /* overflow: hidden;
-        height: 800px; */
+    .content-opt {
+        display: inline-block;
+        width: 100%;
     }
 
     .content-banner {
@@ -185,6 +185,7 @@
 
     .options-bg {
         margin-top: -10px;
+        margin-bottom: 50px;
     }
 
     .text-opt {

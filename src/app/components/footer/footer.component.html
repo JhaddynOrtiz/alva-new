@@ -1,29 +1,30 @@
-<section class="footer-content ">
+<section (scroll)="divScroll($event)" class="footer-content">
     <div class="content-transition">
-        <img class="vector-footer" src="../../../assets/images/Vector-footer.svg" alt="">
-        <div class="row content-footer">
-            <div class="col-md-7 text-footer">
-                <div class="content-text-footer">
-                    <p @title-large class="title-footer">
-                        El amanecer de una revolución digital
-                    </p>
-                    <p @subtitle-short class="download-footer">
-                        Descarga ALVA ahora.
-                    </p>
-                    <img @image-googlePlay class="image-google-play" src="../../../assets/images/image-google-play.png" alt="">
-                    <p @availability-large class="availability-footer">
-                        * Disponible solo para dispositivos Android
-                    </p>
+            <img class="vector-footer" src="../../../assets/images/Vector-footer.svg" alt="">
+            <div class="row content-footer">
+                <div class="col-md-7 text-footer">
+                    <div class="content-text-footer">
+                        <p [@title-large]="runState" class="title-footer">
+                            El amanecer de una revolución digital
+                        </p>
+                        <p [@subtitle-short]="runState" class="download-footer">
+                            Descarga ALVA ahora.
+                        </p>
+                        <img [@image-googlePlay]="runState" class="image-google-play"
+                            src="../../../assets/images/image-google-play.png" alt="">
+                        <p [@availability-large]="runState" class="availability-footer">
+                            * Disponible solo para dispositivos Android
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="phones">
+                        <img [@topPhone]="runState" class="img-phone-1" src="../../../assets/images/MockUp1.png" alt="">
+                        <img [@midlePhone]="runState" class="img-phone-2" src="../../../assets/images/MockUp2.png" alt="">
+                        <img [@bottomPhone]="runState" class="img-phone-3" src="../../../assets/images/MockUp3.png" alt="">
+                    </div>
                 </div>
             </div>
-            <div class="col-md-5">
-                <div class="phones">
-                    <img @topPhone class="img-phone-1" src="../../../assets/images/MockUp1.png" alt="">
-                    <img @midlePhone class="img-phone-2" src="../../../assets/images/MockUp2.png" alt="">
-                    <img @bottomPhone class="img-phone-3" src="../../../assets/images/MockUp3.png" alt="">
-                </div>
-            </div>
-        </div>
     </div>
 </section>
 
