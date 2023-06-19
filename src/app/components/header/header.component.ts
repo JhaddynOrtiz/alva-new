@@ -8,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+  onDownload() {
+    window.open('https://play.google.com/store/apps/details?id=org.oyealva.stable&pli=1');
+  }
+
 }
