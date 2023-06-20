@@ -134,22 +134,30 @@
     font-size: 20px;
 }
 
-.img-opt1 {
-    position: absolute;
+.img-opt {
+    overflow: hidden;
+    /* position: fixed;
     right: 0;
+    top: 12%; */
 }
 
 .img-opt2 {
     position: fixed;
     top: 15%;
     right: 0;
-    transition: 0.2;
+}
+
+.img-resp-final {
+    position: relative;
 }
 
 .img-resp {
     float: right;
     /* margin-right: 150px; */
-    margin-right: 50px;
+}
+
+.img-resp1 {
+    overflow: hidden;
 }
 
 @media only screen and (max-width: 570px) {

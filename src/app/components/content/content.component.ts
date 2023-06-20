@@ -31,7 +31,7 @@ const transitionPhone = trigger('phoneState', [
   )
 ]);
 
-const transitionPhonesRigth = trigger('imagePhone', [
+/* const transitionPhonesRigth = trigger('imagePhone', [
   state('scrolling', style({
     position: 'absolute',
     right: 0
@@ -44,22 +44,34 @@ const transitionPhonesRigth = trigger('imagePhone', [
   transition('scrolling <=> stopScroll',
     animate('.5s')
   )
+]); */
+
+const transitionOpt1 = trigger('image1', [
+  state('scrolling', style({
+    position: 'relative',
+    right: 0
+  })),
+  state('stopScroll', style({
+    position: 'fixed',
+    top: '11%',
+    right: 30
+  })),
+  transition('scrolling <=> stopScroll',
+    animate('0s')
+  )
 ]);
 
 @Component({
   selector: 'app-content',
   templateUrl: './content.component.html',
   styleUrls: ['./content.component.css'],
-  animations: [ transitionBanner, transitionPhone, transitionPhonesRigth ]
+  animations: [ transitionBanner, transitionPhone, transitionOpt1 ]
 })
 export class ContentComponent implements OnInit {
   runBanner: string = 'state1';
-  runImgPhone: string = 'scrolling';
-
-  imgtransition1: string = 'img-opt1';
-  imgtransition2: string = 'img-opt1';
-  imgtransition3: string = 'img-opt1';
-  imgtransition4: string = 'img-opt1';
+  runImgPhone1: string = 'scrolling';
+  runImgPhone2: string = 'scrolling';
+  runImgPhone3: string = 'scrolling';
 
   @HostListener('window:scroll', ['$event'])
   divScroll(e: any) {
@@ -71,43 +83,32 @@ export class ContentComponent implements OnInit {
       this.runBanner = 'state1';
     }
 
-    if (screen.width < 768) {
-      this.imgtransition1 = '';
-      this.imgtransition2 = '';
-      this.imgtransition3 = '';
-      this.imgtransition4 = '';
-    }
     
 
-    if(screen.width > 768 && currentPosition > 1000 && currentPosition < 1600) {
-      this.imgtransition1 = 'img-opt2';
-    } else if(screen.width < 768) {
-      this.imgtransition1 = 'img-opt'
+    if(currentPosition > 1000 && currentPosition < 1600) {
+      this.runImgPhone1 = 'stopScroll';
     } else {
-      this.imgtransition1 = 'img-opt1';
+      this.runImgPhone1 = 'scrolling';
     }
 
-    if(screen.width > 768 && currentPosition > 2040 && currentPosition < 2600) {
-      this.imgtransition2 = 'img-opt2';
-    } else if(screen.width < 768) {
-      this.imgtransition2 = 'img-opt'
+    if(currentPosition > 1970 && currentPosition < 2500) {
+      this.runImgPhone2 = 'stopScroll';
     } else {
-      this.imgtransition2 = 'img-opt1';
+      this.runImgPhone2 = 'scrolling';
     }
 
-    if(screen.width > 768 && currentPosition > 3120 && currentPosition < 3690) {
-      this.imgtransition3 = 'img-opt2';
-    } else if(screen.width < 768) {
-      this.imgtransition3 = 'img-opt'
+    if(currentPosition > 2830 && currentPosition < 3350) {
+      this.runImgPhone3 = 'stopScroll';
     } else {
-      this.imgtransition3 = 'img-opt1';
+      this.runImgPhone3 = 'scrolling';
     }
 
-    if(screen.width < 768) {
+    /* if(screen.width < 768) {
       this.imgtransition4 = 'img-opt'
-    } 
+    }  */
 
-    //[ngClass]="imgtransition4" 
+    console.log(currentPosition);
+    
 
   }
 
