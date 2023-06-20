@@ -42,6 +42,7 @@
 .btn-head:active {
     background-color: transparent;
     border-color: #fff;
+    color: #fff;
 }
 
 .content-button {

@@ -88,6 +88,9 @@
     right: 0px;
 }
 
+.image-google-play {
+    cursor: pointer;
+}
 
 @media only screen and (max-width: 570px) {
 
