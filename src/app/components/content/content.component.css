@@ -95,6 +95,7 @@
 
 .options-bg {
     width: 100%;
+    overflow: hidden;
     background-color: #ffffff;
     /* height: 600px; */
     position: relative;
@@ -135,17 +136,25 @@
 }
 
 .img-opt {
-    overflow: hidden;
-    /* position: fixed;
-    right: 0;
-    top: 12%; */
+    /* overflow: hidden; */
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 95%, rgba(255, 255, 255, 0) 100%);
 }
 
-.img-opt2 {
+.img-opt-final {
+    padding-top: 50px;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 95%, rgba(255, 255, 255, 0) 100%);
+    z-index: 1;
+}
+
+/* .img-opt2 {
     position: fixed;
     top: 15%;
     right: 0;
-}
+} */
 
 .img-resp-final {
     position: relative;
@@ -158,10 +167,12 @@
 
 .img-resp1 {
     overflow: hidden;
+    /* xxxx */
+    /* width: 90%; */
 }
 
 @media only screen and (max-width: 570px) {
-    
+
     .content-section {
         height: 850px;
     }

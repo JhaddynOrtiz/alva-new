@@ -53,7 +53,7 @@ const transitionOpt1 = trigger('image1', [
   })),
   state('stopScroll', style({
     position: 'fixed',
-    top: '11%',
+    top: '0%',
     right: 30
   })),
   transition('scrolling <=> stopScroll',
@@ -85,21 +85,25 @@ export class ContentComponent implements OnInit {
 
     
 
-    if(currentPosition > 1000 && currentPosition < 1600) {
+    /* if(currentPosition > 1000 && currentPosition < 1600) { */
+    if(currentPosition > 1000 && this.runImgPhone1 === 'scrolling') {
       this.runImgPhone1 = 'stopScroll';
-    } else {
+    } 
+    if(currentPosition < 1050 && this.runImgPhone1 === 'stopScroll') {
       this.runImgPhone1 = 'scrolling';
     }
 
-    if(currentPosition > 1970 && currentPosition < 2500) {
+    if(currentPosition > 1940 && this.runImgPhone2 === 'scrolling') {
       this.runImgPhone2 = 'stopScroll';
-    } else {
+    } 
+    if (currentPosition < 1990 && this.runImgPhone2 === 'stopScroll') {
       this.runImgPhone2 = 'scrolling';
     }
 
-    if(currentPosition > 2830 && currentPosition < 3350) {
+    if(currentPosition > 2830 && this.runImgPhone3 === 'scrolling') {
       this.runImgPhone3 = 'stopScroll';
-    } else {
+    } 
+    if(currentPosition < 2880 && this.runImgPhone3 === 'stopScroll') {
       this.runImgPhone3 = 'scrolling';
     }
 
