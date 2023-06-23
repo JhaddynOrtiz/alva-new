@@ -30,8 +30,20 @@
     font-family: MyFont;
 }
 
+.callRef {
+    color: #ADB5BD;
+    text-decoration: none;
+}
+
+.am {
+    position: fixed;
+    bottom: 110px;
+    right: 0;
+    z-index: 100;
+}
+
 .terms {
-    font-size: 16px;
+    font-size: 12px;
 }
 
 .copy {
@@ -92,6 +104,10 @@
     cursor: pointer;
 }
 
+.termsAnd {
+    cursor: pointer;
+}
+
 @media only screen and (max-width: 570px) {
 
     .content-transition {
@@ -113,4 +129,10 @@
     }
 }
 
-@media (min-width: 571px) and (max-width: 1260px) {}
+@media (min-width: 571px) and (max-width: 1260px) {
+
+    .title-footer {
+        font-size: 30px;
+        line-height: 44px;
+    }
+}

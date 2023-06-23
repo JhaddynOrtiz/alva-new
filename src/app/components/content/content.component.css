@@ -38,6 +38,7 @@
     background-color: transparent;
     border-color: #fff;
     border-radius: 3rem;
+    z-index: 10;
 }
 
 .btn-download:hover {
@@ -171,6 +172,14 @@
     /* width: 90%; */
 }
 
+.img-opt-none {
+    display: none;
+}
+
+.img-resp-none {
+    display: none;
+}
+
 @media only screen and (max-width: 570px) {
 
     .content-section {
@@ -195,6 +204,7 @@
     .banner-subtitle {
         font-size: 16px;
         margin-top: 30px;
+        text-align: center;
     }
 
     .color-curve {
@@ -239,6 +249,20 @@
     }
 
     .img-opt {
+        /* width: 100%; */
+        display: none;
+    }
+
+    .img-opt-none {
+        display: block;
+    }
+
+    .img-resp-final {
+        width: 100%;
+        display: block;
+    }
+
+    .img-resp-none {
         width: 100%;
     }
 
@@ -270,6 +294,7 @@
         font-size: 16px;
         line-height: 26px;
         margin-top: 30px;
+        text-align: center;
     }
 
     .color-curve {
@@ -297,7 +322,42 @@
         z-index: 0;
     }
 
+    .content-opt {
+        padding-top: 0;
+    }
+
+    .text-opt {
+        padding-left: 0;
+    }
+
+    .text-cont-opt {
+        text-align: center;
+        padding: 50px;
+    }
+
     .img-resp {
         width: 100%;
     }
+
+    .btn-download {
+        z-index: 10;
+        display: block;
+        margin: auto;
+    }
+
+    .img-opt {
+        /* width: 100%; */
+        display: none;
+    }
+
+    .img-opt-none {
+        /* width: 100%; */
+        display: block;
+    }
+
+    .img-resp-final {
+        display: block;
+        margin: auto;
+    }
+    
 }
