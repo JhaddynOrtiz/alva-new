@@ -21,10 +21,10 @@ const transitionBanner = trigger('bannerState', [
 
 const transitionPhone = trigger('phoneState', [
   state('state1', style({
-    transform: 'translateY(50%)'
+    transform: 'translateY(50%)',
   })),
   state('state2', style({
-    transform: 'translateY(0)'
+    transform: 'translateY(0)',
   })),
   transition('state1 <=> state2',
     animate(800)

@@ -13,6 +13,7 @@
     left: 80px;
     color: #ffffff;
     line-height: 25px;
+    z-index: 1 !important;
 }
 
 .banner-title {
@@ -90,7 +91,7 @@
     height: 712px;
     right: 16%;
     top: 300px;
-    z-index: 1;
+    z-index: 0 !important;
 }
 
 /* background options */
@@ -195,6 +196,7 @@
     .content-banner {
         width: 90%;
         left: 20px;
+        text-align: center;
     }
 
     .banner-title {
@@ -284,6 +286,7 @@
 
     .content-banner {
         width: 80%;
+        text-align: center;
     }
 
     .banner-title {
@@ -343,6 +346,7 @@
     .btn-download {
         z-index: 10;
         display: block;
+        cursor: pointer;
         margin: auto;
     }
 
